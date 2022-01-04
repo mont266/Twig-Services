@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edufie - Online Courses Html Template</title>
+    <title>Online Training Courses - Twig Services</title>
     <!--fivicon icon-->
-    <link rel="icon" href="assets/img/fevicon.png">
+    <link rel="icon" href="assets/img/favicon.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -39,17 +39,6 @@
     <!-- preloader area end -->
     <div class="body-overlay" id="body-overlay"></div>
 
-    <!-- search popup area start -->
-    <div class="search-popup" id="search-popup">
-        <form action="home.html" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search.....">
-            </div>
-            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <!-- //. search Popup -->
-
     <!-- navbar start -->
     <header class="navbar-area">
         <nav class="navbar navbar-expand-lg">
@@ -62,27 +51,23 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a class="main-logo" href="home.html"><img src="assets/img/logo.png" alt="img"></a>
-                </div>
-                <div class="nav-right-part nav-right-part-mobile">
-                    <ul>
-                        <li><a class="search header-search" href="#"><i class="fa fa-search"></i></a></li>
-                    </ul>
+                    <a class="main-logo" href="index.html"><img src="assets/img/logo.png" alt="img"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="themefie_main_menu">
-                    <div class="single-input-wrap">
-                        <input type="text" placeholder="Search your best courses">
-                        <button><i class="fa fa-search"></i></button>
-                    </div>
                     <ul class="navbar-nav menu-open text-end">
-                        <li class="current-menu-item menu-item-has-children">
-                            <a href="#">Home</a>
+                        <li class="current-menu-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Courses</a>
                             <ul class="sub-menu">
-                                <li><a href="index.html">Home 01</a></li>
-                                <li><a href="home-2.html">Home 02</a></li>
-                                <li><a href="home-3.html">Home 03</a></li>
-                                <li><a href="home-4.html">Login Home</a></li>
+                                <li><a href="healthsafety.html">Health & Safety</a></li>
+                                <li><a href="businesshr.html">HR & Business Skills</a></li>
+                                <li><a href="socialcare.html">Health & Social Care</a></li>
                             </ul>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="ourteam.html">Meet The Team</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Pages</a>
@@ -103,24 +88,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="instructor.html">Become an Instructor</a>
+                            <a href="#">Login</a>
                         </li>
                     </ul>
                 </div>
                 <div class="nav-right-part nav-right-part-desktop">
                     <ul>
-                        <li class="right-search">
-                            <a href="#"><i class="fa fa-search"></i></a>
-                            <div class="single-input-wrap">
-                                <input type="text" placeholder="Search your best courses">
-                                <button><i class="fa fa-search"></i></button>
-                            </div>
-                        </li>
-                        <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
-                        <li><a href="home-2.html">Log In</a></li>
                         <li>
                             <a href="home-2.html" class="btn btn-base-light">
-                                Sign Up
+                                Get Started
                             </a>
                         </li>
                     </ul>
@@ -146,37 +122,19 @@
             </div>
         </div>
     </div>
-    <div class="category-navbar navbar-area d-xl-block d-none">
+    <div class="category-navbar navbar-area d-xl-block d-none" style="background-color: #99bada;">
         <nav class="navbar navbar-expand-lg">
             <div class="container nav-container">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav menu-open">
                         <li>
-                            <a href="category.html">Development</a>
+                            <a href="healthsafety.html">Health & Safety</a>
                         </li>
                         <li>
-                            <a href="category.html">Design</a>
+                            <a href="businesshr.html">HR & Business Skills</a>
                         </li>
                         <li>
-                            <a href="category.html">Marketing</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Business</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Office Productivity</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Photography & Video</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Health & Fitness</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Music</a>
-                        </li>
-                        <li>
-                            <a href="category.html">IT & Software</a>
+                            <a href="socialcare.html">Health & Social Care</a>
                         </li>
                     </ul>
                 </div>
@@ -190,11 +148,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 align-self-center">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Sign In</li>
-                    </ul>
-                    <h2>Please Sign in here</h2>
+                    <h2>Login Portal</h2>
                 </div>
             </div>
         </div>
@@ -206,27 +160,26 @@
             <div class="row justify-content-center">
                 <div class="col-xl-5">
                     <form class="single-signin-form-wrap">
-                        <div class="single-input-wrap">
-                            <input type="text" placeholder="User Name">
-                        </div>
-                        <div class="single-input-wrap">
-                            <input type="text" placeholder="Enter">
-                        </div>
-                        <div class="single-input-wrap">
-                            <input type="password" placeholder="Password">
-                        </div>
+                        <h3>Business Account Login</h3>
+                        <p>If you are a business user, please click the button below and you will be redirected to the business account login page.</p>
                         <div class="btn-wrap">
-                            <button class="btn btn-base w-100">Signin Now</button>
+                            <button class="btn btn-base w-100" formtarget="_blank" formaction="https://videotilehost.com/twigservices/busLogin.php">Login</button>
                         </div>
-                        <div class="bottom-content">
-                            <a href="#">Forgottem Your Password</a>
-                            <a class="strong" href="signup.html">Signup</a>
+                    </form>
+                </div>
+                <div class="col-xl-5">
+                    <form class="single-signin-form-wrap">
+                        <h3>Candidate Account Login</h3>
+                        <p>If you are an individual or free trial user, please click the button below and you will be redirected to the candidate login page.</p>
+                        <div class="btn-wrap">
+                            <button class="btn btn-base w-100" formtarget="_blank" formaction="https://videotilehost.com/twigservices/index.php">Login</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!-- footer area start -->
     <footer class="footer-area">

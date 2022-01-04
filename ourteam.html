@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edufie - Online Courses Html Template</title>
+    <title>Online Training Courses - Twig Services</title>
     <!--fivicon icon-->
-    <link rel="icon" href="assets/img/fevicon.png">
+    <link rel="icon" href="assets/img/favicon.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -39,17 +39,6 @@
     <!-- preloader area end -->
     <div class="body-overlay" id="body-overlay"></div>
 
-    <!-- search popup area start -->
-    <div class="search-popup" id="search-popup">
-        <form action="home.html" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search.....">
-            </div>
-            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <!-- //. search Popup -->
-
     <!-- navbar start -->
     <header class="navbar-area">
         <nav class="navbar navbar-expand-lg">
@@ -62,27 +51,23 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a class="main-logo" href="home.html"><img src="assets/img/logo.png" alt="img"></a>
-                </div>
-                <div class="nav-right-part nav-right-part-mobile">
-                    <ul>
-                        <li><a class="search header-search" href="#"><i class="fa fa-search"></i></a></li>
-                    </ul>
+                    <a class="main-logo" href="index.html"><img src="assets/img/logo.png" alt="img"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="themefie_main_menu">
-                    <div class="single-input-wrap">
-                        <input type="text" placeholder="Search your best courses">
-                        <button><i class="fa fa-search"></i></button>
-                    </div>
                     <ul class="navbar-nav menu-open text-end">
-                        <li class="current-menu-item menu-item-has-children">
-                            <a href="#">Home</a>
+                        <li class="current-menu-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Courses</a>
                             <ul class="sub-menu">
-                                <li><a href="index.html">Home 01</a></li>
-                                <li><a href="home-2.html">Home 02</a></li>
-                                <li><a href="home-3.html">Home 03</a></li>
-                                <li><a href="home-4.html">Login Home</a></li>
+                                <li><a href="healthsafety.html">Health & Safety</a></li>
+                                <li><a href="businesshr.html">HR & Business Skills</a></li>
+                                <li><a href="socialcare.html">Health & Social Care</a></li>
                             </ul>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="ourteam.html">Meet The Team</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Pages</a>
@@ -103,24 +88,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="instructor.html">Become an Instructor</a>
+                            <a href="#">Login</a>
                         </li>
                     </ul>
                 </div>
                 <div class="nav-right-part nav-right-part-desktop">
                     <ul>
-                        <li class="right-search">
-                            <a href="#"><i class="fa fa-search"></i></a>
-                            <div class="single-input-wrap">
-                                <input type="text" placeholder="Search your best courses">
-                                <button><i class="fa fa-search"></i></button>
-                            </div>
-                        </li>
-                        <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
-                        <li><a href="home-2.html">Log In</a></li>
                         <li>
                             <a href="home-2.html" class="btn btn-base-light">
-                                Sign Up
+                                Get Started
                             </a>
                         </li>
                     </ul>
@@ -146,37 +122,19 @@
             </div>
         </div>
     </div>
-    <div class="category-navbar navbar-area d-xl-block d-none">
+    <div class="category-navbar navbar-area d-xl-block d-none" style="background-color: #99bada;">
         <nav class="navbar navbar-expand-lg">
             <div class="container nav-container">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav menu-open">
                         <li>
-                            <a href="category.html">Development</a>
+                            <a href="healthsafety.html">Health & Safety</a>
                         </li>
                         <li>
-                            <a href="category.html">Design</a>
+                            <a href="businesshr.html">HR & Business Skills</a>
                         </li>
                         <li>
-                            <a href="category.html">Marketing</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Business</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Office Productivity</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Photography & Video</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Health & Fitness</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Music</a>
-                        </li>
-                        <li>
-                            <a href="category.html">IT & Software</a>
+                            <a href="socialcare.html">Health & Social Care</a>
                         </li>
                     </ul>
                 </div>
@@ -185,152 +143,23 @@
     </div>
     <!-- navbar end -->
 
-    <!-- Banner Area Start-->
-    <section class="banner-area instructor-banner p-0" style="background-color: #11142D;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-5 col-8">
-                    <div class="thumb">
-                        <img src="assets/img/instructor.png" alt="img">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-10 align-self-center">
-                    <div class="banner-inner text-md-start text-center">
-                        <h1 class="text-white">Make a global impact</h1>
-                        <div class="banner-content me-0">
-                            <p class="text-white">Create an online video course and earn money by teaching people around the world.</p>                         
-                        </div>
-                        <a class="btn btn-base" href="instructor-details.html">Become an Instrucotor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner Area End -->
-
-    <!-- intro Area Start-->
-    <div class="text-center pd-top-135 pd-bottom-115">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h2>Discover your potential</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet .</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-intro-wrap-2">
-                        <div class="thumb">
-                            <img src="assets/img/intro/01.png" alt="img">
-                        </div>
-                        <div class="wrap-details">
-                            <h4><a href="#">Earn money</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui praesent nam fermentum, est neque, dignissim. Phasellus feugiat elit vulputate convallis.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-intro-wrap-2">
-                        <div class="thumb">
-                            <img src="assets/img/intro/02.png" alt="img">
-                        </div>
-                        <div class="wrap-details">
-                            <h4><a href="#">Inspire students</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui praesent nam fermentum, est neque, dignissim. Phasellus feugiat elit vulputate convallis.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single-intro-wrap-2">
-                        <div class="thumb">
-                            <img src="assets/img/intro/03.png" alt="img">
-                        </div>
-                        <div class="wrap-details">
-                            <h4><a href="#">Join our community</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui praesent nam fermentum, est neque, dignissim. Phasellus feugiat elit vulputate convallis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>            
-    </div>
-    <!-- intro Area End -->
-
-    <!-- fact Area Start-->
-    <div class="text-center pd-top-135 pd-bottom-115" style="background: #F9FAFD;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h2>Exceptional opportunities</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet .</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-fact-wrap">
-                        <div class="fact-count">
-                            <h3><span class="counter">35</span>m</h3>
-                        </div>
-                        <div class="wrap-details">
-                            <p>Students worldwide</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-fact-wrap">
-                        <div class="fact-count">
-                            <h3><span class="counter">65</span>+</h3>
-                        </div>
-                        <div class="wrap-details">
-                            <p>Different languages</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-fact-wrap">
-                        <div class="fact-count">
-                            <h3><span class="counter">400</span>m</h3>
-                        </div>
-                        <div class="wrap-details">
-                            <p>Course enrollments</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-fact-wrap">
-                        <div class="fact-count">
-                            <h3><span class="counter">180</span>+</h3>
-                        </div>
-                        <div class="wrap-details">
-                            <p>Countries taught</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>            
-    </div>
-    <!-- fact Area End -->
-
     <!-- potential Area Start-->
     <div class="potential-area pd-top-135 pd-bottom-115">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
+                    
                     <div class="section-title text-center">
-                        <h2>Discover your potential</h2>
+                        <h2>Meet Our Team</h2>
                         <ul class="potential-nav nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Plan your course</button>
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tom West</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Record your video</button>
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Nisha Parmar</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Build your community</button>
+                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Annie Cooper</button>
                             </li>
                         </ul>
                     </div>
@@ -343,14 +172,18 @@
                             <div class="row">
                                 <div class="col-lg-6 align-self-center">
                                     <div class="potential-wrap">
-                                        <h3>Record your video</h3>
-                                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio velit elit, mattis sit pellentesque. Eu blandit velit viverra ut. Bibendum in molestie odio suspendisse neque, tortor sem vestibulum a. Varius mauris scelerisque cursus et vel ut urna. Dignissim mi quis et sagittis, dolor fermentum non scelerisque. Adipiscing proin eu orci vitae tristique magna nulla amet sit.</p>
-                                        <p>In leo ut ut mauris scelerisque ullamcorper laoreet pharetra. Mattis vestibulum lobortis tristique bibendum. Id turpis nibh nulla ac eget convallis id fringilla volutpat. Pretium sed morbi blandit odio in. Arcu pulvinar eget faucibus amet non in. Pulvinar orci, iaculis amet elit, odio. Cursus amet, sed volutpat ridiculus ullamcorper pellentesque.</p>
+                                        <h3>Tom West | <a href="https://www.linkedin.com/in/thomas-west-b2368a134/"><i class="fab fa-linkedin-in" style="color: #0a66c2;"></i></a></h3>
+                                        <h6>Managing Director</h6>
+                                        <p class="mb-4"> In his current role as a managing director of Twig Services, Tom has found a match made in heaven (yet another cliché!) as by offering the video-based and interactive state-of-the-art online staff training that he has at his disposal, he takes great pleasure in having lots of ‘happy bunnies’ as customers.
+
+                                            He has the perfect tools of the trade to help him achieve these goals with the tailor-made discounted pricing packages available, which can not only help companies to maximise their efficiency, but it can also help them to keep their staff training costs low! He is forever reminiscing about the days though when he used to watch his beloved Chelsea play, albeit 2nd division football for a grand total of around £1.00 per day out which would include travel, admittance, and a match program!
+                                            Tom welcomes any online staff training enquiries for companies up to and beyond 5,000 employees, that is of course, if you can put up with the odd cliché!
+                                            </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 align-self-center">
                                     <div class="thumb">
-                                        <img src="assets/img/about/1.png" alt="img">
+                                        <img src="assets/img/about/tom.png" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -359,14 +192,19 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="potential-wrap">
-                                        <h3>Record your video</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio velit elit, mattis sit pellentesque. Eu blandit velit viverra ut. Bibendum in molestie odio suspendisse neque, tortor sem vestibulum a. Varius mauris scelerisque cursus et vel ut urna. Dignissim mi quis et sagittis, dolor fermentum non scelerisque. Adipiscing proin eu orci vitae tristique magna nulla amet sit.</p>
-                                        <p>In leo ut ut mauris scelerisque ullamcorper laoreet pharetra. Mattis vestibulum lobortis tristique bibendum. Id turpis nibh nulla ac eget convallis id fringilla volutpat. Pretium sed morbi blandit odio in. Arcu pulvinar eget faucibus amet non in. Pulvinar orci, iaculis amet elit, odio. Cursus amet, sed volutpat ridiculus ullamcorper pellentesque.</p>
+                                        <h3>Nisha Parmar | <a href="https://www.linkedin.com/in/nisha-parmar-675899198/"><i class="fab fa-linkedin-in" style="color: #0a66c2;"></i></a></h3>
+                                        <h6>Senior Sales Consultant</h6>
+                                        <p>‘Twig’ is very privileged to welcome Nisha to the team and are delighted to see that she has ‘hit the ground’ running in becoming a fully-fledged senior sales consultant in lightning-fast time! Coupled with her amazing energy levels, the company is quickly having to adapt to cope with the increased online staff training sales enquiries that this ‘one man’ or rather ‘one woman army’ is generating!
+
+                                            The only issue we have with her, is that she is a passionate ‘United’ footie fan (Manchester of course!) which would normally be a huge bone of contention in the office with her director Tom who is a rival ‘Chelsea’ fan. We are pleased to report however, that so far, all is harmonious in the office and in fact an unlikely bond has been formed between the pair, mainly because both teams are playing so badly at the moment! Let’s just say that there are plenty of boxes of ‘Kleenex’ to-hand in the office because of their team’s awful ‘footie’ results, accompanied by the unsavoury and pungent smell, caused by lots of ‘crying over spilt milk!’
+                                            
+                                            Nisha does not bite, you will be pleased to hear, so feel free to approach her for any of your online staff training enquiries and if your call should coincide with a ‘rare’ United win, you may even be able to negotiate some extra discounted pricing on our on your quotation!
+                                            </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="thumb">
-                                        <img src="assets/img/about/1.png" alt="img">
+                                        <img src="assets/img/about/nisha.png" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -375,14 +213,19 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="potential-wrap">
-                                        <h3>Record your video</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio velit elit, mattis sit pellentesque. Eu blandit velit viverra ut. Bibendum in molestie odio suspendisse neque, tortor sem vestibulum a. Varius mauris scelerisque cursus et vel ut urna. Dignissim mi quis et sagittis, dolor fermentum non scelerisque. Adipiscing proin eu orci vitae tristique magna nulla amet sit.</p>
-                                        <p>In leo ut ut mauris scelerisque ullamcorper laoreet pharetra. Mattis vestibulum lobortis tristique bibendum. Id turpis nibh nulla ac eget convallis id fringilla volutpat. Pretium sed morbi blandit odio in. Arcu pulvinar eget faucibus amet non in. Pulvinar orci, iaculis amet elit, odio. Cursus amet, sed volutpat ridiculus ullamcorper pellentesque.</p>
+                                        <h3>Annie Cooper</h3>
+                                        <h6>Office Manager</h6>
+                                        <p>Annie is an invaluable member of the Twig Services team and is the steady rock that gels the company and our very own inhouse staff training together! Annie has been a key part of many SMEs for most of her working career but please don’t be fooled by the soft-looking exterior as she rules with an ‘iron fist!’ We will not go as far as saying staff members ‘shake in their boots’ when she is around but let’s just say that the office is run in an orderly and ‘ship-shape Bristol Fashion’ when she is around and even directors are wary of her wrath!
+
+                                            In her spare time, Annie loves DIY and thinks she is better than most men at it, although, she does not want to appear sexist, especially coming from a staff training HR background! She also loves cooking and getting her fingers green in her garden but only during the summer months as she ‘hibernates like an angry bear’ in the winter!
+                                            
+                                            If you have any issues you want to raise, speak to Annie, as there’s a good chance, she will be able to ‘crack a whip’ (literally!) and get them resolved but it is not advised to ask her for any discounted pricing if she gets out the wrong side of bed that morning!
+                                            </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="thumb">
-                                        <img src="assets/img/about/1.png" alt="img">
+                                        <img src="assets/img/about/annie.png" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -395,16 +238,16 @@
     <!-- potential Area End -->
 
     <!-- testimonial courses Area Start-->
-    <section class="testimonial-courses-area pd-bottom-150">
+    <section class="testimonial-courses-area pd-bottom-130" style="background-color:#e8e5fb;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>People <i style="color: var(--main-color);" class="fa fa-heart"></i> Edufie</h2>
+                        <h2>People <i style="color: red;" class="fa fa-heart"></i> Twig Services</h2>
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="testimonial-slider owl-carousel">
+                    <div class="testimonial-slider-2 owl-carousel">
                         <div class="item">
                             <div class="single-testimonial-wrap">
                                 <div class="thumb">
@@ -414,6 +257,19 @@
                                     <h5><a href="#">Super fast WordPress themes</a></h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit placerat sit feugiat ornare tortor arcu, euismod pellentesque porta. Lacus, semper congue consequat, potenti suspendisse luctus cras vel.</p>
                                     <span>- Jessica Jessy</span>
+                                    <a class="play-btn" href="#"><i class="fa fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-testimonial-wrap">
+                                <div class="thumb">
+                                    <img src="assets/img/quote.png" alt="img">
+                                </div>
+                                <div class="wrap-details">
+                                    <h5><a href="#">Super Courses of great quality</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit placerat sit feugiat ornare tortor arcu, euismod pellentesque porta. Lacus, semper congue consequat, potenti suspendisse luctus cras vel.</p>
+                                    <span>- Kathryn Murphy</span>
                                     <a class="play-btn" href="#"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
@@ -437,22 +293,9 @@
                                     <img src="assets/img/quote.png" alt="img">
                                 </div>
                                 <div class="wrap-details">
-                                    <h5><a href="#">Super fast WordPress themes</a></h5>
+                                    <h5><a href="#">Super Courses of great quality</a></h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit placerat sit feugiat ornare tortor arcu, euismod pellentesque porta. Lacus, semper congue consequat, potenti suspendisse luctus cras vel.</p>
-                                    <span>- Jessica Jessy</span>
-                                    <a class="play-btn" href="#"><i class="fa fa-play"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="single-testimonial-wrap">
-                                <div class="thumb">
-                                    <img src="assets/img/quote.png" alt="img">
-                                </div>
-                                <div class="wrap-details">
-                                    <h5><a href="#">Super fast WordPress themes</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit placerat sit feugiat ornare tortor arcu, euismod pellentesque porta. Lacus, semper congue consequat, potenti suspendisse luctus cras vel.</p>
-                                    <span>- Jessica Jessy</span>
+                                    <span>- Kathryn Murphy</span>
                                     <a class="play-btn" href="#"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
@@ -470,9 +313,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="cta-wrap">
-                        <h2>Become an instructor today</h2>
-                        <h5>Join the world's largest online learning marketplace.</h5>
-                        <a class="btn btn-white" href="#">Become an Instrucotor</a>
+                        <h2>Train Your Team Today</h2>
+                        <h5>Access the best training resources for your team.</h5>
+                        <a class="btn btn-white" href="#">Get Started!</a>
                     </div>
                 </div>
             </div>
