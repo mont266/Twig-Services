@@ -201,104 +201,62 @@
     </section>
     <!-- breabcrumb Area End -->
 
-    <!-- zoom courses Area Start-->
-    <section class="zoom-courses-area pd-top-135 pd-bottom-130">
-        <div class="container">
-            <div class="row">
-                <div class="calculator">
+    <!-- zoom courses Area Start--> 
+<section class="zoom-courses-area pd-top-135 pd-bottom-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-inner">
                     <div id="calcu" class="calc">
-                        <!-- <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle">
-                          <div class="form-group">
-                            <label title="Employees">How Many Employees</label>
-                            <select id="employees" name="EmployeeCount">
-                              <option value="0-10">0-10</option>
-                              <option value="11-25">11-25</option>
-                              <option value="26-50">26-50</option>
-                              <option value="51-100">51-100</option>
-                              <option value="101-250">101-250</option>
-                              <option value="251-500">251-500</option>
-                              <option value="501-750">501-750</option>
-                              <option value="751-1000">751-1000</option>
-                              <option value="1001-2500">1001-2500</option>
-                              <option value="2501-5000">2501-5000</option>
-                            </select>
-                          </div>
-                
-                          <div class="form-group">
-                            <label title="Upfront">Paying Upfront?</label>
-                            <select id="upfront" name="PayingUpfront">
-                              <option value="Yes">Yes</option>
-                              <option value="No">No</option>
-                            </select>
-                          </div>
-                
-                          <div class="form-group">
-                            <label id="totalCost1"></label><br>
-                            <label id="costPerEmployee1"></label>
-                            <p id="error"></p>
-                            
-                            </div>
-                          <div class="form-group">
-                            <label>By pressing Submit, you acknowledge that this form collects data based on what you have entered in the above fields.</label><br>
-                            <input type="button" value="Calculate" onclick="calculate()">
-                         </div>
-                        </form> -->
-
-                        <div id="calcu" class="calc">
-                            <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle">
-                    
-                              <div class="form-group">
+                        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle" class="contact-form">
+                            <div class="single-input-wrap">
                                 <label for="name" title="Your Name" aria-required="true">Your Name *</label>
                                 <input class="form-control" id="name" type="text" name="txtName">
-                              </div>
-                    
-                              <div class="form-group">
+                            </div>
+                            <div class="single-input-wrap">
                                 <label for="email" title="Your Email" aria-required="true">Your Email *</label>
                                 <input class="form-control" id="email" type="email" name="txtEmail">
-                              </div>
-                    
-                              <div class="form-group">
+                            </div>
+                            <div class="single-input-wrap">
                                 <label for="maintain" title="How much do you want us to update your site?">Number of Employees *</label>
                                 <select id="maintain" class="form-control" name="txtMaintain">
-                                  <option value="0-10">0-10</option>
-                                  <option value="11-25">11-25</option>
-                                  <option value="26-50">26-50</option>
-                                  <option value="51-100">51-100</option>
-                                  <option value="101-250">101-250</option>
-                                  <option value="251-500">251-500</option>
-                                  <option value="501-750">501-750</option>
-                                  <option value="751-1000">751-1000</option>
-                                  <option value="1001-2500">1001-2500</option>
-                                  <option value="2501-5000">2501-5000</option>
+                                    <option value="0-10">0-10</option>
+                                    <option value="11-25">11-25</option>
+                                    <option value="26-50">26-50</option>
+                                    <option value="51-100">51-100</option>
+                                    <option value="101-250">101-250</option>
+                                    <option value="251-500">251-500</option>
+                                    <option value="501-750">501-750</option>
+                                    <option value="751-1000">751-1000</option>
+                                    <option value="1001-2500">1001-2500</option>
+                                    <option value="2501-5000">2501-5000</option>
                                 </select>
-                              </div>
-                    
-                              <div class="form-group">
+                            </div>
+                            <div class="single-input-wrap">
                                 <label for="websiteQuantity">Payment Upfront? *</label>
                                 <select id="contentCreation" class="form-control" name="txtContent">
-                                  <option value="Yes">Yes</option>
-                                  <option value="No">No</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
                                 </select>
-                                <!--<input class="form-control" type="text" name="txtContent">-->
-                              </div>
-                    
-                              <div class="form-group">
+                            </div>
+                            <div class="single-input-wrap">
                                 <label id="initResult"> </label><br>
                                 <label id="resMonthly"></label><br>
                                 <label id="deposit"></label><br>
                                 <label id="monthlyPayment"></label><br>
                                 <p id="error"></p>
-                                
-                                </div>
-                              <div class="form-group">
+                            </div>
+                            <div class="single-input-wrap">
                                 <label>By pressing Submit, you acknowledge that this form collects data based on what you have entered in the above fields.</label><br>
-                                <input class="btn btn-primary" type="button" value="Calculate" onclick="calculate()">
-                             </div>
-                            </form>
+                                <input class="btn btn-base" type="button" value="Calculate" onclick="calculate()" style="background-color: #4169e1;">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- zoom courses Area End -->
 
     <!-- footer area start -->
