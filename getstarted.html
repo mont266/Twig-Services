@@ -21,7 +21,7 @@
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+   
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDQRMW4338"></script>
     <script>
@@ -118,41 +118,56 @@
     </div>
     <!-- navbar end -->
 
-    <!-- breabcrumb Area Start-->
-    <section class="breadcrumb-area" style="background-color: #F9FAFD;">
+    <!-- Banner Area Start-->
+    <section class="banner-area style-4 bg-gray-2">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 align-self-center">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Quote Calculator</li>
-                    </ul>
-                    <h2>Quote Calculator</h2>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 align-self-center">
+                    <div class="banner-inner">
+                        <h1>
+                            Get Started with 
+                            <span class="bottom-line">
+                                Twig
+                                <img src="assets/img/banner/4.png" alt="img">
+                            </span>
+                        </h1>
+                        <div class="banner-content pb-1 pt-xl-2">
+                            <p>This is the beginning to something great!</p>     
+                            <button class="btn btn-base" onClick="document.getElementById('getstarted').scrollIntoView();">Start Now!</button>  
+                            <a class="btn btn-base-light-border" href="calculator.html">Quote Calculator</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="thumb">
+                        <img src="assets/img/banner/getstarted.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- breabcrumb Area End -->
+    <!-- Banner Area End -->
 
-    <!-- zoom courses Area Start--> 
-<section class="zoom-courses-area pd-top-135 pd-bottom-130">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="contact-inner">
-                    <div id="calcu" class="calc">
-                        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle" class="contact-form">
+    <!-- zoom courses Area Start-->
+    <section class="zoom-courses-area pd-top-135 pd-bottom-130" id="getstarted">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h4>Get Started</h4>
+                    <div class="contact-inner">
+                        <form class="getstarted-form" method="POST" data-netlify="true">
                             <div class="single-input-wrap">
-                                <label for="name" title="Your Name" aria-required="true">Your Name *</label>
-                                <input class="form-control" id="name" type="text" name="txtName">
+                                <input type="text" placeholder="Enter Your Full Name">
                             </div>
                             <div class="single-input-wrap">
-                                <label for="email" title="Your Email" aria-required="true">Your Email *</label>
-                                <input class="form-control" id="email" type="email" name="txtEmail">
+                                <input type="text" placeholder="Enter Your Email Address">
                             </div>
                             <div class="single-input-wrap">
-                                <label for="maintain" title="How much do you want us to update your site?">Number of Employees *</label>
-                                <select id="maintain" class="form-control" name="txtMaintain">
+                                <input type="number" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="single-input-wrap">
+                                <label>Number of Employees</label>
+                                <select>
                                     <option value="0-10">0-10</option>
                                     <option value="11-25">11-25</option>
                                     <option value="26-50">26-50</option>
@@ -164,32 +179,14 @@
                                     <option value="1001-2500">1001-2500</option>
                                     <option value="2501-5000">2501-5000</option>
                                 </select>
-                            </div>
-                            <div class="single-input-wrap">
-                                <label for="websiteQuantity">Payment Upfront? *</label>
-                                <select id="contentCreation" class="form-control" name="txtContent">
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                            </div>
-                            <div class="single-input-wrap">
-                                <label id="initResult"> </label><br>
-                                <label id="resMonthly"></label><br>
-                                <label id="deposit"></label><br>
-                                <label id="monthlyPayment"></label><br>
-                                <p id="error"></p>
-                            </div>
-                            <div class="single-input-wrap">
-                                <label>By pressing Submit, you acknowledge that this form collects data based on what you have entered in the above fields.</label><br>
-                                <input class="btn btn-base" type="button" value="Calculate" onclick="calculate()" style="background-color: #4169e1;">
-                            </div>
+                            </div>                                    
+                            <button type="submit" class="btn btn-base w-100">Request A Call Back</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <!-- zoom courses Area End -->
 
     <!-- footer area start -->
@@ -275,7 +272,7 @@
         </div>
         <!--Footer bottom-->
     </footer>
-    <!-- footer area end -->     
+    <!-- footer area end -->       
 
     <!-- back-to-top end -->
     <div class="back-to-top">
@@ -298,7 +295,6 @@
     <script src="assets/js/owl.min.js"></script>
     <script src="assets/js/slick-slider.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/calculator.js"></script>
     <!-- main js  -->
     <script src="assets/js/main.js"></script>
     <script>var widget = new SimplybookWidget({"widget_type":"button","url":"https:\/\/twigservices.simplybook.it","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#00b5b8","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"","dark_font_color":"#454545","light_font_color":"#353f5e","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]},"button_title":"Book now","button_background_color":"#4169e1","button_text_color":"#ffffff","button_position":"right","button_position_offset":"55%"});</script>

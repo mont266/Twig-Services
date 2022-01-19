@@ -22,6 +22,16 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDQRMW4338"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CDQRMW4338');
+    </script>
+
 
 </head>
 <body class='sc5'>
@@ -80,7 +90,7 @@
                 <div class="nav-right-part nav-right-part-desktop">
                     <ul>
                         <li>
-                            <a href="home-2.html" class="btn btn-base">Get Started</a>
+                            <a href="getstarted.html" class="btn btn-base">Get Started</a>
                         </li>
                     </ul>
                 </div>
@@ -106,8 +116,10 @@
                             <p>Increase your staff's knowledge with E-Learning courses from Twig Services.</p>                         
                         </div>
                         <div class="newslatter-inner mt-xl-4 me-xl-5">
-                            <input type="text" placeholder="Enter your email address">
-                            <button class="btn btn-base">Request A Free Trial</button>
+                            <form class="registered-interest" method="POST" data-netlify="true">
+                                <input type="text" placeholder="Enter your email address">
+                                <button class="btn btn-base">Request A Free Trial</button>
+                            </form>
                         </div>
                         <div class="banner-multi-user mt-xl-5 mt-4">
                             <div class="media">
@@ -3190,8 +3202,8 @@
                             <h4 class="widget-title">Categories</h4>
                             <ul class="pe-4">
                                 <li><a href="healthsafety.html">Health and Safety</a></li>
-                                        <li><a href="businesshr.html">HR and Business</a></li>
-                                        <li><a href="socialcare.html">Health and Social Care</a></li>
+                                <li><a href="businesshr.html">HR and Business</a></li>
+                                <li><a href="socialcare.html">Health and Social Care</a></li>
                             </ul>
                         </div>
                     </div>
@@ -3199,11 +3211,11 @@
                         <div class="footer-widget widget widget_link">
                             <h4 class="widget-title">Company</h4>
                             <ul class="pe-4">
-                                <li><a href="">Get Started</a></li>
+                                <li><a href="getstarted.html">Get Started</a></li>
                                 <li><a href="ourteam.html">Meet The Team</a></li>
-                                <li><a href="">Reviews</a></li>
-                                <li><a href="">Terms and Conditions</a></li>
-                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="https://uk.trustpilot.com/review/twigservices.co.uk">Reviews</a></li>
+                                <li><a href="terms.html">Terms and Conditions</a></li>
+                                <li><a href="privacypolicy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -3288,5 +3300,7 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- main js  -->
     <script src="assets/js/main.js"></script>
+    <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+    <script>var widget = new SimplybookWidget({"widget_type":"button","url":"https:\/\/twigservices.simplybook.it","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#00b5b8","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"","dark_font_color":"#454545","light_font_color":"#353f5e","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]},"button_title":"Book now","button_background_color":"#4169e1","button_text_color":"#ffffff","button_position":"right","button_position_offset":"55%"});</script>
 </body>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edufie - Online Courses Html Template</title>
+    <title>Online Training Courses - Twig Services</title>
     <!--fivicon icon-->
-    <link rel="icon" href="assets/img/fevicon.png">
+    <link rel="icon" href="assets/img/favicon.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -22,7 +22,15 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDQRMW4338"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-CDQRMW4338');
+    </script>
 </head>
 <body class='sc5'>
     <!-- preloader area start -->
@@ -39,17 +47,6 @@
     <!-- preloader area end -->
     <div class="body-overlay" id="body-overlay"></div>
 
-    <!-- search popup area start -->
-    <div class="search-popup" id="search-popup">
-        <form action="home.html" class="search-form">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search.....">
-            </div>
-            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <!-- //. search Popup -->
-
     <!-- navbar start -->
     <header class="navbar-area">
         <nav class="navbar navbar-expand-lg">
@@ -62,65 +59,37 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a class="main-logo" href="home.html"><img src="assets/img/logo.png" alt="img"></a>
-                </div>
-                <div class="nav-right-part nav-right-part-mobile">
-                    <ul>
-                        <li><a class="search header-search" href="#"><i class="fa fa-search"></i></a></li>
-                    </ul>
+                    <a class="main-logo" href="index.html"><img src="assets/img/logo.png" alt="img"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="themefie_main_menu">
-                    <div class="single-input-wrap">
-                        <input type="text" placeholder="Search your best courses">
-                        <button><i class="fa fa-search"></i></button>
-                    </div>
                     <ul class="navbar-nav menu-open text-end">
-                        <li class="current-menu-item menu-item-has-children">
-                            <a href="#">Home</a>
-                            <ul class="sub-menu">
-                                <li><a href="index.html">Home 01</a></li>
-                                <li><a href="home-2.html">Home 02</a></li>
-                                <li><a href="home-3.html">Home 03</a></li>
-                                <li><a href="home-4.html">Login Home</a></li>
-                            </ul>
+                        <li class="current-menu-item">
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Pages</a>
+                            <a href="#">Courses</a>
                             <ul class="sub-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-cat.html">Blog Category</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                                <li><a href="course.html">Course</a></li>
-                                <li><a href="course-details.html">Course Details</a></li>
-                                <li><a href="category.html">Category</a></li>
-                                <li><a href="instructor.html">Instructor</a></li>
-                                <li><a href="instructor-details.html">Single Instructor</a></li>
-                                <li><a href="dashboard.html">Dashboard</a></li>
-                                <li><a href="zoom-meeting.html">Zoom with Us</a></li>
-                                <li><a href="signin.html">Sign In</a></li>
-                                <li><a href="signup.html">Sign Up</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="healthsafety.html">Health & Safety</a></li>
+                                <li><a href="businesshr.html">HR & Business Skills</a></li>
+                                <li><a href="socialcare.html">Health & Social Care</a></li>
                             </ul>
                         </li>
+                        <li class="current-menu-item">
+                            <a href="ourteam.html">Meet The Team</a>
+                        </li>
                         <li>
-                            <a href="instructor.html">Become an Instructor</a>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="signin.html">Login</a>
                         </li>
                     </ul>
                 </div>
                 <div class="nav-right-part nav-right-part-desktop">
                     <ul>
-                        <li class="right-search">
-                            <a href="#"><i class="fa fa-search"></i></a>
-                            <div class="single-input-wrap">
-                                <input type="text" placeholder="Search your best courses">
-                                <button><i class="fa fa-search"></i></button>
-                            </div>
-                        </li>
-                        <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
-                        <li><a href="home-2.html">Log In</a></li>
                         <li>
-                            <a href="home-2.html" class="btn btn-base-light">
-                                Sign Up
+                            <a href="getstarted.html" class="btn btn-base-light">
+                                Get Started
                             </a>
                         </li>
                     </ul>
@@ -128,55 +97,19 @@
             </div>
         </nav>
     </header>
-    <div class="category-responsive d-xl-none d-block">
-        <div class="container">
-            <div class="category-slider owl-carousel">
-                <div class="item">
-                    <a href="category.html">Development</a>
-                </div>
-                <div class="item"><a href="category.html">Design</a></div>
-                <div class="item"><a href="category.html">Marketing</a></div>
-                <div class="item"><a href="category.html">Business</a></div>
-                <div class="item"><a href="category.html">Office Productivity</a></div>
-                <div class="item"><a href="category.html">Photography</a></div>
-                <div class="item"><a href="category.html">Video</a></div>
-                <div class="item"><a href="category.html">Health & Fitness</a></div>
-                <div class="item"><a href="category.html">Music</a></div>
-                <div class="item"><a href="category.html">IT & Software</a></div>
-            </div>
-        </div>
-    </div>
     <div class="category-navbar navbar-area d-xl-block d-none">
         <nav class="navbar navbar-expand-lg">
             <div class="container nav-container">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav menu-open">
                         <li>
-                            <a href="category.html">Development</a>
+                            <a href="healthsafety.html">Health & Safety</a>
                         </li>
                         <li>
-                            <a href="category.html">Design</a>
+                            <a href="businesshr.html">HR & Business Skills</a>
                         </li>
                         <li>
-                            <a href="category.html">Marketing</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Business</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Office Productivity</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Photography & Video</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Health & Fitness</a>
-                        </li>
-                        <li>
-                            <a href="category.html">Music</a>
-                        </li>
-                        <li>
-                            <a href="category.html">IT & Software</a>
+                            <a href="socialcare.html">Health & Social Care</a>
                         </li>
                     </ul>
                 </div>
@@ -185,29 +118,16 @@
     </div>
     <!-- navbar end -->
 
-    <!-- breabcrumb Area Start-->
-    <section class="breadcrumb-area" style="background-color: #F9FAFD;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 align-self-center">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="home-2.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Conatact</li>
-                    </ul>
-                    <h2>Conatact</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- breabcrumb Area End -->
+    
 
     <!-- zoom courses Area Start-->
-    <section class="zoom-courses-area pd-top-135 pd-bottom-130">
+    <section class="zoom-courses-area pd-top-135 pd-bottom-130" id="getstarted">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
+                    <h4>Contact Us</h4>
                     <div class="contact-inner">
-                        <form class="contact-form">
+                        <form class="contact-form" method="POST" data-netlify="true">
                             <div class="single-input-wrap">
                                 <input type="text" placeholder="Enter Your Full Name">
                             </div>
@@ -215,10 +135,25 @@
                                 <input type="text" placeholder="Enter Your Email Address">
                             </div>
                             <div class="single-input-wrap">
-                                <textarea rows="5" placeholder="Enter Your Project Details...."></textarea>
-                            </div>                                    
-                            <button type="submit" class="btn btn-base w-100">Submit your project</button>
+                                <input type="number" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="single-input-wrap">
+                                <textarea placeholder="Message"></textarea>
+                            </div>                                 
+                            <button type="submit" class="btn btn-base w-100">Submit</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h4></h4>
+                    <div class="contact-inner" style="text-align: center;">
+                        <h4>Get Started With Twig!</h4>
+                        <button class="btn btn-base" href="getstarted.html">Start Now!</button>
                     </div>
                 </div>
             </div>
@@ -236,8 +171,8 @@
                             <h4 class="widget-title">Categories</h4>
                             <ul class="pe-4">
                                 <li><a href="healthsafety.html">Health and Safety</a></li>
-                                        <li><a href="businesshr.html">HR and Business</a></li>
-                                        <li><a href="socialcare.html">Health and Social Care</a></li>
+                                <li><a href="businesshr.html">HR and Business</a></li>
+                                <li><a href="socialcare.html">Health and Social Care</a></li>
                             </ul>
                         </div>
                     </div>
@@ -245,9 +180,11 @@
                         <div class="footer-widget widget widget_link">
                             <h4 class="widget-title">Company</h4>
                             <ul class="pe-4">
-                                <li><a href="">Get Started</a></li>
+                                <li><a href="getstarted.html">Get Started</a></li>
                                 <li><a href="ourteam.html">Meet The Team</a></li>
-                                <li><a href="">Reviews</a></li>
+                                <li><a href="https://uk.trustpilot.com/review/twigservices.co.uk">Reviews</a></li>
+                                <li><a href="terms.html">Terms and Conditions</a></li>
+                                <li><a href="privacypolicy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -332,5 +269,6 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- main js  -->
     <script src="assets/js/main.js"></script>
+    <script>var widget = new SimplybookWidget({"widget_type":"button","url":"https:\/\/twigservices.simplybook.it","theme":"hugo","theme_settings":{"timeline_hide_unavailable":"1","hide_past_days":"0","timeline_show_end_time":"0","timeline_modern_display":"as_slots","nav_bg_color":"#ffffff","sb_base_color":"#00b5b8","display_item_mode":"block","body_bg_color":"#ffffff","sb_review_image":"","dark_font_color":"#454545","light_font_color":"#353f5e","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"allow_switch_to_ada":0,"predefined":[]},"button_title":"Book now","button_background_color":"#4169e1","button_text_color":"#ffffff","button_position":"right","button_position_offset":"55%"});</script>
 </body>
 </html>
