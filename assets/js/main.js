@@ -103,7 +103,7 @@
             loop:true,
             margin: 30,
             nav:true,
-            dots: true,
+            dots: false,
             smartSpeed:1500,
             navText: [leftAngle,rightAngle],
             responsive:{
