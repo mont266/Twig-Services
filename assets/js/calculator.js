@@ -23,42 +23,62 @@ function calculate() {
         if (document.getElementById("maintain").value == "0-10") {
             totalCost = 1800 * discount;
             costPerEmployee = (totalCost / 12) / 10;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "11-25") {
             totalCost = 3000 * discount;
             costPerEmployee = (totalCost / 12) / 25;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "26-50") {
             totalCost = 4200 * discount;
             costPerEmployee = (totalCost / 12) / 50;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "51-100") {
             totalCost = 5400 * discount;
             costPerEmployee = (totalCost / 12) / 100;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "101-250") {
             totalCost = 9600 * discount;
             costPerEmployee = (totalCost / 12) / 250;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "251-500") {
             totalCost = 14400 * discount;
             costPerEmployee = (totalCost / 12) / 500;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "501-750") {
             totalCost = 18000 * discount;
             costPerEmployee = (totalCost / 12) / 750;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "751-1000") {
             totalCost = 22800 * discount;
             costPerEmployee = (totalCost / 12) / 1000;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "1001-2500") {
             totalCost = 40800 * discount;
             costPerEmployee = (totalCost / 12) / 2500;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         if (document.getElementById("maintain").value == "2501-5000") {
             totalCost = 54000 * discount;
             costPerEmployee = (totalCost / 12) / 5000;
+            document.getElementById("deposit").innerHTML = "";
+            document.getElementById("monthlyPayment").innerHTML = "";
         }
         } else {
             discount = 0;
