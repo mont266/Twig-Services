@@ -139,6 +139,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
+                <label>We offer a <strong>No Hidden VAT</strong> promise!</label><br>
+                <label>This calculator is only for the Unlimited Use plan. </label> <a onClick="document.getElementById('unlimited').scrollIntoView();" style="color: blue;">Find Out More</a>
                 <div class="contact-inner">
                     <div id="calcu" class="calc">
                         <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle" class="contact-form">
@@ -166,10 +168,10 @@
                                 </select>
                             </div>
                             <div class="single-input-wrap">
-                                <label for="websiteQuantity">Unlimited Package? *</label>
-                                <select id="contentCreation" class="form-control" name="Unlimited Package?">
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
+                                <label for="websiteQuantity">Payment Schedule *</label>
+                                <select id="contentCreation" class="form-control" name="Payment Schedule">
+                                    <option value="Upfront">Upfront</option>
+                                    <option value="Monthly">Monthly</option>
                                 </select>
                             </div>
                             <div class="single-input-wrap">
@@ -184,6 +186,25 @@
                                 <input class="btn btn-base" type="button" value="Calculate" onclick="calculate()" style="background-color: #4169e1;">
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h4></h4>
+                        <div class="contact-inner" style="text-align: center;" id="unlimited">
+                            <h4>Plan Information</h4>
+                            <h5>Universal Credit PAYG Plan</h5>
+                            <p><i>Note: This calculator doesn’t include PAYG as you only pay for what you need and therefore it doesn’t need a calculated price.</i><br><br>
+                                With our unique <strong>‘Universal Credit’ (PAYG) scheme</strong>, you will not be restricted to nominate course topics ‘up-front’ in order to receive a discounted premium, 
+                                as you can select from our entire catalogue of more than 100 course titles and can automatically enjoy discounted prices! You will also have the convenience and facility in place 
+                                to allocate any more staff training that may be required on an ad-hoc basis and the funds can be ‘topped up’, if needed in the future, as you would do with a PAYG mobile phone tariff!
+                            </p><br>
+                            <h5>Unlimited Use (Full Access)</h5>
+                            <p>Our <strong>‘Unlimited Use’ (Full access)</strong> subscription plan makes staff training cost effective and allows for budgets to be capped, as it grants organisations full access to distribute our entire catalogue of approved e-Learning training course videos (excluding the Level 1 H&S in a Construction Environment ‘supervised exam upgrade’) to their workforce for <strong>one flat rate!</strong>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
