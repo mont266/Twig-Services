@@ -88,7 +88,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);
         }
         if (document.getElementById("maintain").value == "11-25") {
             totalCost = 3000;
@@ -96,7 +96,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "26-50") {
             totalCost = 4200;
@@ -104,7 +104,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "51-100") {
             totalCost = 5400;
@@ -112,7 +112,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "101-250") {
             totalCost = 9600;
@@ -120,7 +120,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "251-500") {
             totalCost = 14400;
@@ -128,7 +128,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "501-750") {
             totalCost = 18000;
@@ -136,7 +136,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "751-1000") {
             totalCost = 22800;
@@ -144,7 +144,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "1001-2500") {
             totalCost = 40800;
@@ -152,7 +152,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
         if (document.getElementById("maintain").value == "2501-5000") {
             totalCost = 54000;
@@ -160,7 +160,7 @@ function calculate() {
             deposit = totalCost / 2;
             monthlyPayment = deposit / 11;
             document.getElementById("deposit").innerHTML = "Deposit: £" + deposit;
-            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + monthlyPayment;
+            document.getElementById("monthlyPayment").innerHTML = "11 Monthly Installments Of: £" + (Math.round(monthlyPayment * 100) / 100).toFixed(2);;
         }
     }
 
