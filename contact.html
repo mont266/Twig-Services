@@ -108,11 +108,13 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h4>Contact Us</h4>
+                    <p>Please note that any visits to our offices are made by appointment only</p>
                     <div class="contact-inner">
-                        <form class="contact-form" name="Contact-Form" method="POST" data-netlify="true">
+                        <form class="contact-form" name="Contact-Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                             <div class="single-input-wrap">
                                 <input type="text" name="Full Name" placeholder="Enter Your Full Name">
                             </div>
+                            
                             <div class="single-input-wrap">
                                 <input type="text" name="Email Address" placeholder="Enter Your Email Address">
                             </div>
@@ -121,7 +123,10 @@
                             </div>
                             <div class="single-input-wrap">
                                 <textarea placeholder="Message" name="Message"></textarea>
-                            </div>                                 
+                            </div>   
+                            <div class="hidden"> <input name="bot-field" type="hidden" />
+                                  </label>
+                            </div>                              
                             <button type="submit" class="btn btn-base w-100">Submit</button>
                         </form>
                     </div>
@@ -221,6 +226,7 @@
                             <li><a href="https://www.linkedin.com/company/twig-services-ltd"><i class="fab fa-linkedin-in"></i></a></li>
                             <li><a href="https://vimeo.com/user72522235"><i class="fab fa-vimeo"></i></a></li>
                             <li><a href="https://twitter.com/twigservicesltd"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/twig.services/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>                
