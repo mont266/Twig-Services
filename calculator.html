@@ -127,7 +127,7 @@
                 <label>This calculator is only for the Unlimited Use plan. </label> <a onClick="document.getElementById('unlimited').scrollIntoView();" style="color: blue;">Find Out More</a>
                 <div class="contact-inner">
                     <div id="calcu" class="calc">
-                        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle" class="contact-form">
+                        <form name="pricingcalc" id="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle" class="contact-form">
                             <div class="single-input-wrap">
                                 <label for="name" title="Your Name" aria-required="true">Your Name *</label>
                                 <input class="form-control" id="name" type="text" name="Name">
@@ -306,6 +306,14 @@
     
 
     <!-- all plugins here -->
+    <script>
+        var form = document.getElementById("pricingcalc");
+        function submitForm(event) {
+           event.preventDefault();
+           form.style.display = "none";
+        }
+        form.addEventListener('submit', submitForm);
+     </script>
     <script src="assets/js/jquery.3.6.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/imageloded.min.js"></script>
