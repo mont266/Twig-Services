@@ -306,24 +306,15 @@
     
 
     <!-- all plugins here -->
-<script>
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  let myForm = document.getElementById("pricingcalc");
-  let formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
-};
-     </script>
+    <script>
+        document.getElementById("pricingcalc").addEventListener("submit", function(event) {
+          // Prevent the form from submitting
+          event.preventDefault();
+        
+          // Your code to send the form data to your email
+        });
+        </script>
+        
     <script src="assets/js/jquery.3.6.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/imageloded.min.js"></script>
